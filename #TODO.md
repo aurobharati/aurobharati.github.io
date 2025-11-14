@@ -1,3 +1,4 @@
+- work on the background
 - base color
 - home page 3 fill
 - CHANGE HOMEPAGE IMPROVEMENT
