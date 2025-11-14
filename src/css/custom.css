@@ -14,6 +14,8 @@
   --ifm-color-primary-lighter: #365b5b;
   --ifm-color-primary-lightest: #3d6767;
   --ifm-background-color: ivory;
+  /* light-mode code block background */
+  --prism-background-color: #f6f8fa;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
@@ -27,33 +29,71 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* dark-mode tweaks */
+  --ifm-background-color: #0b0f12;
+  /* page background */
+  --prism-background-color: #07101a;
+  /* code block background in dark mode */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.03);
 }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    color: darkslategray;
-  }
-  
-  .theme-layout-footer {
-    background-color: darkslategray;
-  }
-  
-  .theme-layout-navbar {
-    background-color: #FDF5E6;
-  }
-  
-  .theme-code-block {
-    background-color: yellowgreen;
-  }
-  
-  .navbar__title {
-    color: #2f4f4f;
-  }
-  
-  .hero__title{
-    color: ivory;
-  }
+/* Scoped dark-mode overrides for elements that clashed with custom design */
+[data-theme='dark'] h1,
+[data-theme='dark'] h2,
+[data-theme='dark'] h3,
+[data-theme='dark'] h4,
+[data-theme='dark'] h5 {
+  color: #e6eef1;
+  /* lighter headings for contrast */
+}
+
+[data-theme='dark'] .theme-layout-footer {
+  background-color: #071018;
+  color: #cfe8e2;
+}
+
+[data-theme='dark'] .theme-layout-navbar {
+  background-color: rgba(10, 10, 10, 0.6);
+}
+
+[data-theme='dark'] .theme-code-block {
+  background-color: var(--prism-background-color);
+  color: #e6eef1;
+}
+
+[data-theme='dark'] .navbar__title {
+  color: #e6eef1;
+}
+
+[data-theme='dark'] .hero__title {
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: darkslategray;
+}
+
+.theme-layout-footer {
+  background-color: darkslategray;
+}
+
+.theme-layout-navbar {
+  background-color: #FDF5E6;
+}
+
+.theme-code-block {
+  background-color: var(--prism-background-color);
+}
+
+.navbar__title {
+  color: #2f4f4f;
+}
+
+.hero__title {
+  color: ivory;
+}
