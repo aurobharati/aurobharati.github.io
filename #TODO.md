@@ -1,2 +1,9 @@
--- CHANGE HOMEPAGE IMPROVEMENT
--- NIGHMODE
+- base color
+- home page 3 fill
+- CHANGE HOMEPAGE IMPROVEMENT
+- NIGHMODE
+- stray pages remove
+- others
+- copy libraries
+- footer improvements
+- top bar links
