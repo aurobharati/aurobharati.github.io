@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Documenting a Living Tradition',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Img: require('@site/static/img/siddhar-sketch.png').default,
     description: (
       <>
         Explore biographies, teachings, sites, and oral histories of Siddhars connected with the Pondicherry region.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Evidence-Based & Respectful',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Img: require('@site/static/img/evidence-based-research.png').default,
     description: (
       <>
         Each entry is compiled from texts, field research, local knowledge, and historical sources.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Open & Expandable',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Img: require('@site/static/img/open-expandable.png').default,
     description: (
       <>
         Our project welcomes new information, references, and contributions from researchers and devotees.      </>
@@ -31,11 +31,11 @@ const FeatureList = [
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ Img, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={Img} className={styles.featureSvg} role="img" alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -92,4 +92,20 @@ const FeatureList = [
     ),
   },
 ];
+
+function Feature({ Svg, title, description }) {
+  return (
+    <div className={clsx('col col--4')}>
+      <div className="text--center">
+        <Svg className={styles.featureSvg} role="img" />
+      </div>
+      <div className="text--center padding-horiz--md">
+        <Heading as="h3">{title}</Heading>
+        <p>{description}</p>
+      </div>
+    </div>
+  );
+}
+
+
 */
