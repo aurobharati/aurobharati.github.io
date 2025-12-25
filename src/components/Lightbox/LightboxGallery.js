@@ -2,27 +2,11 @@ import React, { useState } from 'react';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 
-export default function LightboxGallery() {
+export default function LightboxGallery({ images = [] }) {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
-  const images = [
-    {
-      src: '/img/siddhar-sketch.png',
-      alt: 'Siddhar Thaengaai Swami',
-      title: 'Siddhar Thaengaai Swami',
-    },
-    {
-      src: '/img/siddhar-sketch.png',
-      alt: 'Example Image',
-      title: 'Sample Example Image',
-    },
-    {
-      src: '/img/siddhar-sketch.png',
-      alt: 'Siddhar Again',
-      title: 'Siddhar Again',
-    },
-  ];
+  const slides = Array.isArray(images) ? images : [];
 
   return (
     <>
@@ -49,11 +33,11 @@ export default function LightboxGallery() {
       `}</style>
 
       <div className="gallery-container">
-        {images.map((img, i) => (
+        {slides.map((img, i) => (
           <img
             key={i}
             src={img.src}
-            alt={img.alt}
+            alt={img.alt || img.title || `image-${i}`}
             className="gallery-image"
             onClick={() => {
               setIndex(i);
@@ -67,12 +51,12 @@ export default function LightboxGallery() {
         open={open}
         index={index}
         close={() => setOpen(false)}
-        slides={images}
+        slides={slides}
         render={{
           slide: ({ slide }) => (
             <img
               src={slide.src}
-              alt={slide.alt}
+              alt={slide.alt || slide.title}
               style={{
                 maxHeight: '80vh',
                 maxWidth: '90vw',

@@ -2,11 +2,21 @@
 sidebar_position: 6
 ---
 
+import LightboxGallery from '@site/src/components/Lightbox/LightboxGallery';
+
+export const galleryImages = [
+  { src: '/img/siddhar-sketch.png', alt: 'Siddhar Thaengaai Swami', title: 'Siddhar Thaengaai Swami' },
+  { src: '/img/siddhar-sketch.png', alt: 'Siddhar Example', title: 'Example Image' },
+  { src: '/img/siddhar-sketch.png', alt: 'Siddhar Again', title: 'Siddhar Again' },
+];
+
 # Congratulations!
 
 You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
 
-Docusaurus has **much more to offer**!
+Below is a lightbox gallery whose images are passed in from this MDX file as a variable (`galleryImages`).
+
+<LightboxGallery images={galleryImages} />
 
 Have **5 more minutes**? Take a look at **[versioning](../tutorial-extras/manage-docs-versions.md)** and **[i18n](../tutorial-extras/translate-your-site.md)**.
 
