@@ -97,3 +97,11 @@ h5 {
 .hero__title {
   color: ivory;
 }
+
+.first-img-style {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+}
