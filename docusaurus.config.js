@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Siddhars Of Pondicherry',
   tagline: 'A growing digital archive of Siddhar heritage',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/fire-icon.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -109,7 +109,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/siddhars-of-pondicherry',
               },
             ],
           },
@@ -144,7 +144,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()}; Built for Sri Aurobindo Society with 🧡 `,
       },
       prism: {
         theme: prismThemes.github,

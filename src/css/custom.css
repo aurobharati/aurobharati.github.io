@@ -80,10 +80,31 @@ h5 {
 
 .theme-layout-footer {
   background-color: darkslategray;
+  color: #ffffff;
 }
 
 .theme-layout-navbar {
   background-color: #FDF5E6;
+}
+
+/* Footer link colors and hover states (light + dark themes) */
+.theme-layout-footer a {
+  color: #ffffff;
+  transition: color .12s ease, text-decoration .12s ease;
+}
+.theme-layout-footer a:hover,
+.theme-layout-footer a:focus {
+  color: #29d5b0 ;
+  text-decoration: underline;
+}
+
+/* Dark-theme footer link tweaks to match the existing dark footer colors */
+[data-theme='dark'] .theme-layout-footer a {
+  color: #cfe8e2;
+}
+[data-theme='dark'] .theme-layout-footer a:hover,
+[data-theme='dark'] .theme-layout-footer a:focus {
+  color: var(--ifm-color-primary-lightest);
 }
 
 .theme-code-block {
