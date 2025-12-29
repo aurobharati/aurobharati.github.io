@@ -1,41 +1,15 @@
-# Website
+# Siddhars Of Pondicherry
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+A growing digital archive of Siddhar heritage
 
-## Installation
+### Documenting a Living Tradition
 
-```bash
-yarn
-```
+Explore biographies, teachings, sites, and oral histories of Siddhars connected with the Pondicherry region.
 
-## Local Development
+### Evidence-Based & Respectful
 
-```bash
-yarn start
-```
+Each entry is compiled from texts, field research, local knowledge, and historical sources.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+#### Open & Expandable
 
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Our project welcomes new information, references, and contributions from researchers and devotees. 
