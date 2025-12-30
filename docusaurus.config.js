@@ -31,7 +31,11 @@ const config = {
   projectName: 'aurobharati.github.io', // your repo name.
   deploymentBranch: 'gh-pages',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -95,8 +99,8 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: '#',
+            label: 'Donate',
             position: 'right',
           },
         ],
@@ -108,8 +112,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/siddhars-of-pondicherry',
+                label: 'Siddhars list',
+                to: '/docs/category/siddhars-of-pondicherry',
               },
             ],
           },
@@ -117,15 +121,15 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Sri Aurobindo Society',
+                href: 'https://aurosociety.org/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Aurobharati',
+                href: 'https://aurobharati.in/',
               },
               {
-                label: 'X',
+                label: 'Facebook',
                 href: 'https://x.com/docusaurus',
               },
             ],
