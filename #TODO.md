@@ -1,4 +1,4 @@
-- CHANGE HOMEPAGE IMPROVEMENT
+
 - NIGHMODE
 - stray pages remove
 - others
